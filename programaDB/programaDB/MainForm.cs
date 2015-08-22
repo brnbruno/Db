@@ -30,5 +30,24 @@ namespace programaDB
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		
+	
+		
+		private void BtnOkClick(object sender, EventArgs e)
+		{
+			clnBancoDados objClnBanco = new clnBancoDados();
+			//objClnBanco.senhaSys = txtSenhaSys.Text;
+			objClnBanco.AbreBanco();
+			
+		
+		}
+		
+		private void BtnLimparClick(object sender, EventArgs e)
+		{
+			txtSenhaSys.Clear();
+			txtNomeUser.Clear();
+			txtSenhaUser.Clear();
+		}
 	}
 }
